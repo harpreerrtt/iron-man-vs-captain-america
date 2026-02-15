@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captain America vs Iron Man</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-wrap">
+    <h1>Captain America vs Iron Man</h1>
+    <section class="hud">
+      <div class="fighter-panel cap-panel">
+        <h2>Captain America</h2>
+        <div class="health-bar"><span id="capHealth"></span></div>
+      </div>
+      <div class="center-panel">
+        <p id="status">Fight!</p>
+        <button id="restartBtn">Restart Match</button>
+      </div>
+      <div class="fighter-panel iron-panel">
+        <h2>Iron Man</h2>
+        <div class="health-bar"><span id="ironHealth"></span></div>
+      </div>
+    </section>
+
+    <canvas id="arena" width="1000" height="520"></canvas>
+
+    <section class="controls">
+      <div>
+        <h3>Captain America Controls</h3>
+        <p>A / D move, W jump, F punch, G throw shield</p>
+      </div>
+      <div>
+        <h3>Iron Man Controls</h3>
+        <p>← / → move, ↑ jump, K punch, L repulsor fire</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
